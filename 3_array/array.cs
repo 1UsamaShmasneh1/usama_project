@@ -129,6 +129,8 @@ namespace _3_array
                     Console.WriteLine(sum / signs.Length);
             }
             #endregion
+
+
         }
     }
 }
