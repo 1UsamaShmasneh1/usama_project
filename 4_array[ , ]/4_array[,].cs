@@ -161,9 +161,9 @@ namespace _4_array_____
             }
             #endregion
 
-            #region HW7
+     #region HW7
             int[,] x = new int[6, 4];
-            for(int i = 0; i < x.GetLength(0); i++)
+            for(int i = 0; i < x.GetLength(0); i+=2)
             {
                 for (int j = 0; j < x.GetLength(1); j++)
                 {
@@ -197,10 +197,10 @@ namespace _4_array_____
             #endregion
 
             #region HW9
-            Console.WriteLine("enter number of classs");
-            int classs = Convert.ToInt32(Console.ReadLine());
-            int[][] class2 = new int[classs][];
-            int[] class_avg = new int[classs];
+            Console.WriteLine("enter number of classes");
+            int classes = Convert.ToInt32(Console.ReadLine());
+            int[][] class2 = new int[classes][];
+            int[] class_avg = new int[classes];
             int max_avg = 0;
             for(int i = 0; i < class2.Length; i++)
             {
