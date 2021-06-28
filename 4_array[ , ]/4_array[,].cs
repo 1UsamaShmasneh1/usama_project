@@ -25,29 +25,30 @@ namespace _4_array_____
             #region HW2
             int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             int num;
-            int counter = 0;
+            int counter = 0, counters = 0;
             for(int i = 0; i < 10; i++)
-            {
-                while (true)
-                {
-                    if (counter > 30)
-                    {
-                        Console.WriteLine("game over, too many tries");
-                        break;
-                    }
+            {                
+                while (counter + counters < 30)
+                {                    
                     Console.WriteLine("enter number");
                     num = Convert.ToInt32(Console.ReadLine());
+                    counter++;
                     if (Array.IndexOf(nums, num) == i)
                     {
                         Console.WriteLine($"you found the side {i + 1} after {counter} tries");
+                        counters += counter;
                         counter = 0;
                         break;
                     }
                     else
                     {
                         Console.WriteLine("wrong, try again");
-                        counter++;
                     }
+                }                
+                if (counter > 30)
+                {
+                    Console.WriteLine("game over, too many tries");
+                    break;
                 }
             }
             #endregion
@@ -161,7 +162,7 @@ namespace _4_array_____
             }
             #endregion
 
-     #region HW7
+            #region HW7
             int[,] x = new int[6, 4];
             for(int i = 0; i < x.GetLength(0); i+=2)
             {
