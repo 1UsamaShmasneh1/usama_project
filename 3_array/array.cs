@@ -11,7 +11,6 @@ namespace _3_array
         static void Main(string[] args)
         {
             #region array build
-            int x = 5;
             int[] myArray = new int[5];
 
             int[] myArray1 = { 0, 1, 2 };
@@ -115,7 +114,6 @@ namespace _3_array
             int num = Convert.ToInt32(Console.ReadLine());
             int[] signs = new int[num];
             int sum = 0;
-            int avg;
             for (int i = 0; i < signs.Length; i++)
             {
                 Console.WriteLine("enter sign");
