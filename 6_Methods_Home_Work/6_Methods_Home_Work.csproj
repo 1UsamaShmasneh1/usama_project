@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{68E212F3-780E-4321-9397-C177703D7F13}</ProjectGuid>
+    <ProjectGuid>{B66A59C3-7453-4895-90B8-84F43A39C875}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_6_methods</RootNamespace>
-    <AssemblyName>6_methods</AssemblyName>
+    <RootNamespace>_6_Methods_Home_Work</RootNamespace>
+    <AssemblyName>6_Methods_Home_Work</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="6_methods.cs" />
+    <Compile Include="6_Methods_Home_Work.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

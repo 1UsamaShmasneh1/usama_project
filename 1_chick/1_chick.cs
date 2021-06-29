@@ -8,10 +8,10 @@ namespace _1_chick
 {
     class Program
     {
-         
+        
         static void Main(string[] args)
         {
-        
+            
         }
     }
 }
