@@ -96,10 +96,11 @@ namespace _6_Methods_Home_Work
         #endregion
 
         #region 12
-        private static void IsPrimary2(int[] num)
+        private static void IsPrimary2()
         {
+            int[] nums = { 5, 4, 75, 24, 77, 89, 45 };
             int m = 2;
-            for(int i = 0; i < num.Length; i++)
+            for(int i = 0; i < nums.Length; i++)
             {
                 while (i % m != 0 && m < i)
                 {
@@ -107,11 +108,11 @@ namespace _6_Methods_Home_Work
                 }
                 if (i == m)
                 {
-                    Console.WriteLine($"the number {num[i]} is primary");
+                    Console.WriteLine($"the number {nums[i]} is primary");
                 }
                 else
                 {
-                    Console.WriteLine($"the number {num[i]} is not primary");
+                    Console.WriteLine($"the number {nums[i]} is not primary");
                 }
             }
         }
@@ -175,14 +176,28 @@ namespace _6_Methods_Home_Work
                     }
                 }
             }
-            Console.WriteLine("exist");
+            Console.WriteLine("not exist");
         }
         #endregion
 
         #region 15
         private static void SortArray(int[] nums)
         {
-            Array.Sort(nums);
+            int num;
+            int num2;
+            for(int i = 0; i < nums.Length - 1; i++)
+            {
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    if(nums[j] < nums[i])
+                    {
+                        num = Array.IndexOf(nums, j);
+                        num2 = nums[i];
+                        nums[i] = nums[num];
+                        nums[num] = num2;
+                    }
+                }
+            }
         }
         private static void PrintArray(int[] nums)
         {
@@ -212,8 +227,8 @@ namespace _6_Methods_Home_Work
             #endregion
 
             #region 12
-            int[] nums = { 5, 4, 75, 24, 77, 89, 45 };
-            IsPrimary2(nums);
+            
+            IsPrimary2();
             #endregion
 
             #region 13
