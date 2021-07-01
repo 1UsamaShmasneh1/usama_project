@@ -195,7 +195,6 @@ namespace _6_Methods_Home_Work
                         num2 = nums[i];
                         nums[i] = nums[num];
                         nums[num] = num2;
-                        break;
                     }
                 }
             }
