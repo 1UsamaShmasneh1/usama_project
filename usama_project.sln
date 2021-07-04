@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6_methods", "6_methods\6_me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6_Methods_Home_Work", "6_Methods_Home_Work\6_Methods_Home_Work.csproj", "{B66A59C3-7453-4895-90B8-84F43A39C875}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memory_Game", "Memory_Game\Memory_Game.csproj", "{0F4EACD4-69D9-41EC-82BD-D43E913DC188}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{B66A59C3-7453-4895-90B8-84F43A39C875}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B66A59C3-7453-4895-90B8-84F43A39C875}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B66A59C3-7453-4895-90B8-84F43A39C875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F4EACD4-69D9-41EC-82BD-D43E913DC188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4EACD4-69D9-41EC-82BD-D43E913DC188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4EACD4-69D9-41EC-82BD-D43E913DC188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4EACD4-69D9-41EC-82BD-D43E913DC188}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

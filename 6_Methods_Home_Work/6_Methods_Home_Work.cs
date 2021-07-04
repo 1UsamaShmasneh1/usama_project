@@ -179,7 +179,7 @@ namespace _6_Methods_Home_Work
             Console.WriteLine("not exist");
         }
         #endregion
-
+        
         #region 15
         private static void SortArray(int[] nums)
         {
