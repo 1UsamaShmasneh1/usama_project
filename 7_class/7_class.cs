@@ -11,7 +11,7 @@ namespace _7_class
         static void Main(string[] args)
         {
             #region class build
-            Car myCar = new Car("Mazda")
+            Car myCar = new Car(true)
             {
                 _year = 2021,
                 _brand = "Mazda",
@@ -20,7 +20,7 @@ namespace _7_class
             myCar.Drive();
             myCar.GetKm();
 
-            Car myCar2 = new Car("Mazda");
+            Car myCar2 = new Car("Mazda", false);
             myCar2._year = 2020;
             myCar2._brand = "Chevrolet";
             myCar2._isActive = false;
@@ -38,23 +38,25 @@ namespace _7_class
         public bool _isActive;
         public bool _isDrive;
         public int _km;
-        public Car()
+        public Car() : this(0, "", false, false, 0)
         {
-
         }
 
-        public Car(string brandToCar)
+        public Car(bool drive) : this(0, "", false, drive, 0)
         {
-            _brand = brandToCar;
-            _isActive = true;
         }
 
-        public Car(int year, string brand, bool isActive, bool isDrive, int km) : this(brand)
+        public Car(string brandToCar, bool active) : this(0, brandToCar, active, false, 0)
+        {
+        }
+
+        public Car(int year, string brand, bool isActive, bool isDrive, int km)
         {
             _year = year;
             _isDrive = isDrive;
-            _isActive = isActive;
             _km = km;
+            _brand = brand;
+            _isActive = isActive;
         }
 
         public void Drive()

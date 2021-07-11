@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memory_Game", "Memory_Game\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_class", "7_class\7_class.csproj", "{97C28399-D849-4853-9CC9-828D9787FF3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_class_HomeWork", "7_class_HomeWork\7_class_HomeWork.csproj", "{02863249-D8A0-4252-A081-DC45639B1411}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{97C28399-D849-4853-9CC9-828D9787FF3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97C28399-D849-4853-9CC9-828D9787FF3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97C28399-D849-4853-9CC9-828D9787FF3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02863249-D8A0-4252-A081-DC45639B1411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02863249-D8A0-4252-A081-DC45639B1411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02863249-D8A0-4252-A081-DC45639B1411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02863249-D8A0-4252-A081-DC45639B1411}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
