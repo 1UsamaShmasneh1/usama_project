@@ -14,17 +14,17 @@ namespace _7_class
             Car myCar = new Car(true)
             {
                 _year = 2021,
-                _brand = "Mazda",
+                _brand = "Mazdaa",
                 _isActive = true
             };
             myCar.Drive();
             myCar.GetKm();
 
-            Car myCar2 = new Car("Mazda", false);
+            Car myCar2 = new Car("Mazda", true);
             myCar2._year = 2020;
-            myCar2._brand = "Chevrolet";
-            myCar2._isActive = false;
             myCar2.Drive();
+            Console.WriteLine($"{myCar2._brand}, {myCar2._isActive}");
+            Console.ReadLine();
             bool isRefEqu = Car.ReferenceEquals(myCar, myCar2);
             bool isEqu =  myCar.Equals(myCar2);
             #endregion
