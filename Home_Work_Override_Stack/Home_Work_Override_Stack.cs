@@ -182,21 +182,28 @@ namespace Home_Work_Override_Stack
         public bool isOn;
         public Computer(string[] openFiles)
         {
-            _openFiles = openFiles;
             isOn = true;
+            _openFiles = openFiles;
         }
         public void TurnOff()
         {
-            for(int i = 0; i < _openFiles.Length; i++)
-            {
-                _openFiles[i] = null;
-            }
+            _openFiles = null;
+            isOn = false;
         }
         public void TurnOff(bool onOrOff)
         {
-            if(_openFiles.Count(null) == _openFiles.Length)
+            if(_openFiles == null)
             {
-                isOn = onOrOff;
+                TurnOff();
+            }
+            else
+            {
+                Console.WriteLine("Are You Sure? y-n");
+                string answer = Console.ReadLine();
+                if(answer == "y")
+                {
+                    TurnOff();
+                }
             }
         }
     }
@@ -212,16 +219,12 @@ namespace Home_Work_Override_Stack
         {
             if (_openFiles.Count(null) == _openFiles.Length)
             {
-                isOn = onOrOff;
+                TurnOff();
             }
             else
             {
-                _filesInCache = new string[_openFiles.Length];
-                for (int i = 0; i < _openFiles.Length; i++)
-                {
-                    _filesInCache[i] = _filesInCache[i];
-                    _openFiles[i] = null;
-                }
+                _filesInCache = _openFiles;
+                _openFiles = null;
                 isOn = onOrOff;
             }
         }

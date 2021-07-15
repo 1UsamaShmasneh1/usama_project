@@ -11,7 +11,7 @@ namespace _1_chick
         
         static void Main(string[] args)
         {
-            bool x = null;
+
         }
     }
 }
