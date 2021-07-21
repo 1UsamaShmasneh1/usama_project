@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9_virtual_and_override", "9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Home_Work_Override_Stack", "Home_Work_Override_Stack\Home_Work_Override_Stack.csproj", "{7F81551D-826D-4098-B356-F5EF1DC54CA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_ref_and_out", "10_ref_and_out\10_ref_and_out.csproj", "{117C98E3-E912-4012-A389-9B66FCA2FEBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ref_out_HomeWork", "ref_out_HomeWork\ref_out_HomeWork.csproj", "{0E5858C8-1C30-4BF6-A55A-5A6D36BF1A36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{7F81551D-826D-4098-B356-F5EF1DC54CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F81551D-826D-4098-B356-F5EF1DC54CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F81551D-826D-4098-B356-F5EF1DC54CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117C98E3-E912-4012-A389-9B66FCA2FEBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117C98E3-E912-4012-A389-9B66FCA2FEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117C98E3-E912-4012-A389-9B66FCA2FEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117C98E3-E912-4012-A389-9B66FCA2FEBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E5858C8-1C30-4BF6-A55A-5A6D36BF1A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5858C8-1C30-4BF6-A55A-5A6D36BF1A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5858C8-1C30-4BF6-A55A-5A6D36BF1A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5858C8-1C30-4BF6-A55A-5A6D36BF1A36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
