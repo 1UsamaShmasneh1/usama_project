@@ -33,7 +33,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Home_Work_Override_Stack", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_ref_and_out", "10_ref_and_out\10_ref_and_out.csproj", "{117C98E3-E912-4012-A389-9B66FCA2FEBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ref_out_HomeWork", "ref_out_HomeWork\ref_out_HomeWork.csproj", "{0E5858C8-1C30-4BF6-A55A-5A6D36BF1A36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ref_out_HomeWork", "ref_out_HomeWork\Ref_out_HomeWork.csproj", "{0E5858C8-1C30-4BF6-A55A-5A6D36BF1A36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

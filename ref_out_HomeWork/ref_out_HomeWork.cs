@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace ref_out_HomeWork
 {
-    class ref_out_HomeWork
+    class Ref_out_HomeWork
     {
         static void Main(string[] args)
         {
+            #region ref, out
             #region 2
             int a1 = 4;
             int b1 = 3;
@@ -29,7 +30,22 @@ namespace ref_out_HomeWork
             bool isTrue = ValidateValues("usama", "shmasneh", "0525455876", "301548756", 30, out errorMessage);
             Console.WriteLine(isTrue);
             #endregion
+            #endregion
+
+            #region params, in, optional
+            #region 3
+            int result = Default(a: 1, b: 10);
+            #endregion
+
+            #region 5
+            Palaphone p1 = new Palaphone(6);
+            Palaphone p2 = new Palaphone(model: "galaxy");
+            Palaphone p3 = new Palaphone(battery: "very good");
+            Palaphone p4 = new Palaphone(cameraQualety: "not good");
+            #endregion
+            #endregion
         }
+        #region ref, out
         #region 2
         public static void PlusMulti(ref int a, ref int b)
         {
@@ -77,6 +93,35 @@ namespace ref_out_HomeWork
             errorMessage = "pass";
             return true;
         }
+        #endregion
+        #endregion
+
+        #region params, in, optional
+        #region 1
+        public static int sumNums(params int[] nums)
+        {
+            int sum = 0;
+            for(int i = 0; i < nums.Length; i++)
+            {
+                sum += nums[i] ^ (i + 1);
+            }
+            return sum;
+        }
+        #endregion
+
+        #region 2
+        public static int Default(int a, int b = 1, int c = 1)
+        {
+            return a * b * c;
+        }
+        #endregion
+
+        #region 4
+        public static int CaulcNum(in int num)
+        {
+            return num * 3;
+        }
+        #endregion
         #endregion
     }
 }

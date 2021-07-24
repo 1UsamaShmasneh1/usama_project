@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ref_out_HomeWork.cs" />
+    <Compile Include="Quest5.cs" />
+    <Compile Include="Ref_out_HomeWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
