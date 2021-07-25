@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_ref_and_out", "10_ref_an
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ref_out_HomeWork", "ref_out_HomeWork\Ref_out_HomeWork.csproj", "{0E5858C8-1C30-4BF6-A55A-5A6D36BF1A36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkAccessModifiers1", "HomeWorkAccessModifiers\HomeWorkAccessModifiers1.csproj", "{8D8B4EA1-33E8-4EC2-9A35-013EF16767C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{0E5858C8-1C30-4BF6-A55A-5A6D36BF1A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E5858C8-1C30-4BF6-A55A-5A6D36BF1A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E5858C8-1C30-4BF6-A55A-5A6D36BF1A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D8B4EA1-33E8-4EC2-9A35-013EF16767C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8B4EA1-33E8-4EC2-9A35-013EF16767C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8B4EA1-33E8-4EC2-9A35-013EF16767C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8B4EA1-33E8-4EC2-9A35-013EF16767C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
