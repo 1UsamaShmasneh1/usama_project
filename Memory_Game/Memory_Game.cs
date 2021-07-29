@@ -8,7 +8,7 @@ namespace Memory_Game
 {
     class Memory_Game
     {
-        private static void Players() // chose number of players
+        private static void NumOfPlayers() // chose number of players
         {
             string scoop = "f";
             string input;
@@ -326,7 +326,7 @@ namespace Memory_Game
         }
         static void Main(string[] args)
         {
-            Players();
+            NumOfPlayers();
             Console.ReadLine();
         }
     }

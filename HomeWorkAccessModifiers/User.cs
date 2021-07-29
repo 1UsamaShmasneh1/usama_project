@@ -8,25 +8,46 @@ namespace HomeWorkAccessModifiers1
 {
     class User
     {
-        public static string[,] user = { { "usama", "012345", "user" }, { "sami", "6789", "superAdmin" }, { "maair", "13579", "admin" } };
+        public static User[] users = new User[3]
+        {
+            new User
+            {
+                _userName = "usama",
+                _password = "12345",
+                _userPermission = UserPermission.user,
+                _isLogin = false
+            },
+            new User
+            {
+                _userName = "sami",
+                _password = "67890",
+                _userPermission = UserPermission.admin,
+                _isLogin = false
+            },
+            new User
+            {
+                _userName = "mair",
+                _password = "15975",
+                _userPermission = UserPermission.superAdmin,
+                _isLogin = false
+            }
+        };        
         private string _password;
         private string _userName;
         private bool _isLogin;
         private UserPermission _userPermission;
         private enum UserPermission {user, admin, superAdmin}
-        public Enum LogIn(string userName, string password)
+        public static Enum LogIn(string userName, string password)
         {
-            for(int i = 0; i < user.GetLength(0); i++)
+            for(int i = 0; i < users.Length; i++)
             {
-                if (userName == user[i, 0] && password == user[i, 1])
+                if (userName.ToLower() == users[i]._userName && password == users[i]._password)
                 {
-                    _userName = userName;
-                    _password = password;
-                    _userPermission = (UserPermission)Enum.Parse(typeof(UserPermission), user[i, 2]);
-                    break;
+                    users[i]._isLogin = true;
+                    return users[i]._userPermission;
                 }
             }
-            return _userPermission;
+            return null;
         }
         public static void Logout(User user)
         {
