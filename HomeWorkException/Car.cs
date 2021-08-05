@@ -14,19 +14,22 @@ namespace HomeWorkException
         public bool TotalLost { get; set; }
         private bool needsRepair;
         public bool NeedsRepair { get; set; }
-        public Car(Car car)
-        {
-            if(car.totalLost && !car.needsRepair)
-            {
-                throw new RepairMismatchException("");
-            }
-        }
         public Car(string brand, bool totalLost, bool needsRepair)
         {
             this.brand = brand;
             this.totalLost = totalLost;
             this.needsRepair = needsRepair;
-
+            try
+            {
+                if (this.totalLost && !this.needsRepair)
+                {
+                    throw new RepairMismatchException("yyyy");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

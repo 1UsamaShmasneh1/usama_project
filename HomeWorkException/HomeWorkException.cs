@@ -10,6 +10,8 @@ namespace HomeWorkException
     {
         static void Main(string[] args)
         {
+            Car car = new Car("mazda", true, false);
+
         }
     }
 }

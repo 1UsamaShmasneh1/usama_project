@@ -22,82 +22,104 @@ namespace HomeWorkException
         }
         public void AddCar(Car car)
         {
-            if (Array.IndexOf(cars, car) != -1)
+            try
             {
-                throw new CarAlreadyHereException("Car already here");
-            }
-            else if (car.TotalLost)
-            {
-                throw new WeDoNotFixTotalLostException("we can't fix total lost cars");
-            }
-            else if (Array.IndexOf(carTypes, car.Brand) == -1)
-            {
-                throw new WrongGarageException("Wrong garage");
-            }
-            else if (car == null)
-            {
-                throw new CarNullException("the car is null");
-            }
-            else if (!car.NeedsRepair)
-            {
-                throw new RepairMismatchException("no need to repair");
-            }
-            else
-            {
-                foreach (Car c in cars)
+                if (Array.IndexOf(cars, car) != -1)
                 {
-                    if(c == null)
+                
+                    throw new CarAlreadyHereException("Car already here");
+                }
+                else if (car.TotalLost)
+                {
+                    throw new WeDoNotFixTotalLostException("we can't fix total lost cars");
+                }
+                else if (Array.IndexOf(carTypes, car.Brand) == -1)
+                {
+                    throw new WrongGarageException("Wrong garage");
+                }
+                else if (car == null)
+                {
+                    throw new CarNullException("the car is null");
+                }
+                else if (!car.NeedsRepair)
+                {
+                    throw new RepairMismatchException("no need to repair");
+                }
+                else
+                {
+                    foreach (Car c in cars)
                     {
-                        cars[Array.IndexOf(cars, c)] = car;
-                    }
-                    else
-                    {
-                        throw new NoMoreRangInGarage("no more range in the garage");
+                        if(c == null)
+                        {
+                            cars[Array.IndexOf(cars, c)] = car;
+                        }
+                        else
+                        {
+                            throw new NoMoreRangInGarage("no more range in the garage");
+                        }
                     }
                 }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
         }
 
         public void FixCar(Car car)
         {
-            if(car == null)
+            try
             {
-                throw new CarNullException("the car is null");
+                if(car == null)
+                {
+                    throw new CarNullException("the car is null");
+                }
+                else if (Array.IndexOf(cars, car) == -1)
+                {
+                    throw new CarNotInGarageException("the car not in the garage");
+                }
+                else if (!car.NeedsRepair)
+                {
+                    throw new RepairMismatchException("the car not need to fix");
+                }
+                else
+                {
+                    car.NeedsRepair = false;
+                }
             }
-            else if (Array.IndexOf(cars, car) == -1)
+            catch (Exception ex)
             {
-                throw new CarNotInGarageException("the car not in the garage");
-            }
-            else if (!car.NeedsRepair)
-            {
-                throw new RepairMismatchException("the car not need to fix");
-            }
-            else
-            {
-                car.NeedsRepair = false;
+                Console.WriteLine(ex.Message);
             }
         }
 
         public void GetOutCar(Car car)
         {
-            if(car == null)
+            try
             {
-                throw new CarNullException("cars is null");
-            }
-            else if(Array.IndexOf(cars, car) == -1)
-            {
-                throw new CarNotInGarageException("the car not in the garage");
-            }
-            else if (car.NeedsRepair)
-            {
-                throw new CarNotReadyException("the car not ready");
-            }
-            foreach (Car c in cars)
-            {
-                if (c == car)
+                if(car == null)
                 {
-                    cars[Array.IndexOf(cars, c)] = null;
-                }                
+                    throw new CarNullException("cars is null");
+                }
+                else if(Array.IndexOf(cars, car) == -1)
+                {
+                    throw new CarNotInGarageException("the car not in the garage");
+                }
+                else if (car.NeedsRepair)
+                {
+                    throw new CarNotReadyException("the car not ready");
+                }
+                foreach (Car c in cars)
+                {
+                    if (c == car)
+                    {
+                        cars[Array.IndexOf(cars, c)] = null;
+                    }                
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
         }
     }
