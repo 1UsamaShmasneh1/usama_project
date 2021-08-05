@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{54346C40-5FAE-477F-8F9D-F41324A31376}</ProjectGuid>
+    <ProjectGuid>{51755184-58A9-4915-A948-0EB2FFB2F7C7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_11_Proprties</RootNamespace>
-    <AssemblyName>11_Proprties</AssemblyName>
+    <RootNamespace>_12_exeption</RootNamespace>
+    <AssemblyName>12_exeption</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="11_Proprties.cs" />
-    <Compile Include="Crow.cs" />
-    <Compile Include="Dog.cs" />
-    <Compile Include="IFlyable.cs" />
-    <Compile Include="Interface1.cs" />
-    <Compile Include="Plane.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

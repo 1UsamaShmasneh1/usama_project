@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{54346C40-5FAE-477F-8F9D-F41324A31376}</ProjectGuid>
+    <ProjectGuid>{A2302E83-4735-480D-B936-D3A866337D8B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_11_Proprties</RootNamespace>
-    <AssemblyName>11_Proprties</AssemblyName>
+    <RootNamespace>HomeWorkException</RootNamespace>
+    <AssemblyName>HomeWorkException</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="11_Proprties.cs" />
-    <Compile Include="Crow.cs" />
-    <Compile Include="Dog.cs" />
-    <Compile Include="IFlyable.cs" />
-    <Compile Include="Interface1.cs" />
-    <Compile Include="Plane.cs" />
+    <Compile Include="Car.cs" />
+    <Compile Include="CarAlreadyHereException.cs" />
+    <Compile Include="CarNotInGarageException.cs" />
+    <Compile Include="CarNotReadyException.cs" />
+    <Compile Include="CarNullException.cs" />
+    <Compile Include="Garage.cs" />
+    <Compile Include="HomeWorkException.cs" />
+    <Compile Include="IGarage.cs" />
+    <Compile Include="NoMoreRangInGarage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepairMismatchException.cs" />
+    <Compile Include="WeDoNotFixTotalLostException.cs" />
+    <Compile Include="WrongGarageException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

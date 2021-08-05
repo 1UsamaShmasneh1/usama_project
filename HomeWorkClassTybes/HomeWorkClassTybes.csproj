@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{54346C40-5FAE-477F-8F9D-F41324A31376}</ProjectGuid>
+    <ProjectGuid>{95F6E84B-767C-4453-996D-26F43787C959}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_11_Proprties</RootNamespace>
-    <AssemblyName>11_Proprties</AssemblyName>
+    <RootNamespace>HomeWorkClassTybes</RootNamespace>
+    <AssemblyName>HomeWorkClassTybes</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="11_Proprties.cs" />
-    <Compile Include="Crow.cs" />
-    <Compile Include="Dog.cs" />
-    <Compile Include="IFlyable.cs" />
-    <Compile Include="Interface1.cs" />
-    <Compile Include="Plane.cs" />
+    <Compile Include="Car.cs" />
+    <Compile Include="HomeWorkClassTybes.cs" />
+    <Compile Include="Motorcycle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VeihcleBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

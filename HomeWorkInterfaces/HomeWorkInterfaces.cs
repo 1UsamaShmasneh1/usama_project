@@ -16,7 +16,8 @@ namespace HomeWorkInterfaces
             if(animal is IMakeSoundable)
             {
                 IMakeSoundable animal2 = animal as IMakeSoundable;
-                animal2.MakeSoundBeforeEating();
+                if (animal2 != null)
+                    animal2.MakeSoundBeforeEating();
             }
             animal.Eat();
         }
