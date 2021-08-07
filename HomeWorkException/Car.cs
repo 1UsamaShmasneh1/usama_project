@@ -26,7 +26,7 @@ namespace HomeWorkException
                     throw new RepairMismatchException("yyyy");
                 }
             }
-            catch (Exception ex)
+            catch (RepairMismatchException ex)
             {
                 Console.WriteLine(ex.Message);
             }
